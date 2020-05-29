@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="MyForms.Site2" %>
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #header {
+            font-family: "Baskerville Old Face";
+            font-size: 60px;
+            font-weight: normal;
+            font-style: normal;
+            font-variant: normal;
+            
+            color:#0094ff;
+            text-align:center;
+        }
+        
+        .nav {
+            padding: 5px;
+        }
+        
+        .auto-style1 {
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+        .auto-style2 {
+            width: 1211px;
+            margin-left: 48px;
+        }
+        
+    </style>
+
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <header id="header"><asp:Image ID="Image1" runat="server" ImageUrl="~/Logo.png" Height="122px" Width="198px" CssClass="auto-style1" />Myboutique-An online boutique
+               </header>
+            </asp:ContentPlaceHolder>
+           
+         <nav id="nav">
+                <ul class="auto-style2">
+                    <li><a href="ManageOrder.aspx">ManageOrder</a></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp; <a href="ManagePayment.aspx">ManagePayment</a></li>
+                    <li>&nbsp;&nbsp; <a href="ManageFeedback.aspx">ManageFeedback</a></li>
+                   
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Logout.aspx">Logout</a></li>
+                 
+                    
+                </ul>
+            </nav>
+               
+            <asp:ContentPlaceHolder ID="MainContentPlaceHolder2" runat="server">
+
+                 </asp:ContentPlaceHolder>                   
+    </div>
+        <div>
+            <br />
+        <footer>
+            Copyright@Nidhi
+        </footer>    
+        </div>
+    </form>
+</body>
+</html>
+

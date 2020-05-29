@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MyForms.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #header {
+            font-family: "Baskerville Old Face";
+            font-size: 80px;
+            font-weight: normal;
+            font-style: normal;
+            font-variant: normal;
+            
+            color:#0094ff;
+            text-align:center;
+        }
+        
+        .nav {
+            padding: 5px;
+        }
+        
+        .auto-style1 {
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+        .auto-style2 {
+            width: 1264px;
+            margin-left: 0px;
+        }
+        
+        ul {
+            font-size:medium;
+        }
+        
+        li a {
+            font-family: "Times New Roman", Times, serif;
+            font-size: large;
+        }
+        
+    </style>
+
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <header id="header"><asp:Image ID="Image1" runat="server" ImageUrl="~/Logo.png" Height="122px" Width="198px" CssClass="auto-style1" />Myboutique-An Online Boutique
+               </header>
+            </asp:ContentPlaceHolder>
+        <nav id="nav">
+                <ul class="auto-style2">
+                    <li><a href="Home.aspx">Home</a></li>
+                    <li><a href="AboutUs.aspx">About Us </a></li>
+                    <li><a href="BuyCloth.aspx">Buy Cloth</a></li>
+                    <li><a href="Alldesign.aspx">All Design</a></li>
+                    <li><a href="Register.aspx">Register</a></li>
+                    <li><a href="Login.aspx">Login</a></li>
+                    <li><a href="Feedback.aspx">Feedback</a></li>
+                    <li><a href="Payment.aspx">Payment</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Logout.aspx">Logout</a></li>
+                 
+                    
+                </ul>
+            </nav>
+               
+            <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+
+                 </asp:ContentPlaceHolder>                   
+    </div>
+        <div>
+            <br />
+        <footer>
+            Copyright@Nidhi
+        </footer>    
+        </div>
+    </form>
+</body>
+</html>
